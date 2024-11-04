@@ -53,16 +53,25 @@ find node
 // elm.style.textDecoration ="none";
 // elm.style.backgroundColor ="black";
 
+// const messageElm = document.querySelector(".message");
+// // console.log(messageElm);
+
+// console.log(messageElm.classList); // see al the class list
+// messageElm.classList.add("danger");
+// messageElm.classList.remove("server");
+
+// console.log(messageElm.classList);
+
+// messageElm.classList.toggle("emptyone"); // toggle- if  empty adds if present removes.
+
+// const val = messageElm.classList.contains("danger");
+// console.log(val);
+
+/////////////// creating and appealing elements.////////////
 const messageElm = document.querySelector(".message");
-// console.log(messageElm);
+const newELm = document.createElement("div");
 
-console.log(messageElm.classList); // see al the class list
-messageElm.classList.add("danger");
-messageElm.classList.remove("server");
+newELm.innerText = "This is new elm";
 
-console.log(messageElm.classList);
-
-messageElm.classList.toggle("emptyone"); // toggle- if  empty adds if present removes.
-
-const val = messageElm.classList.contains("danger");
-console.log(val);
+messageElm.append(newELm);
+// messageElm.appendChild(newELm);
