@@ -100,15 +100,16 @@ find node
 // });
 
 // challenge to chane the decoration and then toggle it
-
+/*
 const displayELm = document.querySelector(".display");
 
 displayELm.addEventListener("click", () => {
   displayELm.classList.toggle("success");
 });
+*/
 
 // //keybinding //////
 
-// document.addEventListener("keydown ", (e) => {
-//   console.log(e);
-// });
+document.addEventListener("keydown ", (e) => {
+  console.log(e.key);
+});
