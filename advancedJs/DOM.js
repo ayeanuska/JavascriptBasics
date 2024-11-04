@@ -80,21 +80,35 @@ find node
 
 /////////////   EVENT HANDLING //////////////////
 
-const displayELm = document.querySelector(".display");
-const decorate = () => {
-  displayELm.style.color = "red";
-  displayELm.style.fontSize = "3rem";
-  displayELm.style.backgroundColor = "black";
-};
-decorate();
+// const displayELm = document.querySelector(".display");
+// const decorate = () => {
+//   displayELm.style.color = "red";
+//   displayELm.style.fontSize = "3rem";
+//   displayELm.style.backgroundColor = "black";
+// };
+// decorate();
 
 // either pass onclick="decorate" in html or
-displayELm.addEventListener("click", decorate);
+// displayELm.addEventListener("click", decorate);
 
-// can also be written as
+// can also be written as. its is known as call back function:  same thing :
+
+// displayELm.addEventListener("click", () => {
+//   displayELm.style.color = "red";
+//   displayELm.style.fontSize = "3rem";
+//   displayELm.style.backgroundColor = "black";
+// });
+
+// challenge to chane the decoration and then toggle it
+
+const displayELm = document.querySelector(".display");
 
 displayELm.addEventListener("click", () => {
-  displayELm.style.color = "red";
-  displayELm.style.fontSize = "3rem";
-  displayELm.style.backgroundColor = "black";
+  displayELm.classList.toggle("success");
 });
+
+// //keybinding //////
+
+// document.addEventListener("keydown ", (e) => {
+//   console.log(e);
+// });
