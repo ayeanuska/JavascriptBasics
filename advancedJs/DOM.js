@@ -67,11 +67,34 @@ find node
 // const val = messageElm.classList.contains("danger");
 // console.log(val);
 
-/////////////// creating and appealing elements.////////////
-const messageElm = document.querySelector(".message");
-const newELm = document.createElement("div");
+// /////////////// creating and appealing elements.////////////
+// const messageElm = document.querySelector(".message");
+// const newELm = document.createElement("div");
 
-newELm.innerText = "This is new elm";
+// newELm.innerText = "This is new elm";
 
-messageElm.append(newELm);
-// messageElm.appendChild(newELm);
+// messageElm.append(newELm);
+// // messageElm.appendChild(newELm);
+
+// messageElm.remove // remove element
+
+/////////////   EVENT HANDLING //////////////////
+
+const displayELm = document.querySelector(".display");
+const decorate = () => {
+  displayELm.style.color = "red";
+  displayELm.style.fontSize = "3rem";
+  displayELm.style.backgroundColor = "black";
+};
+decorate();
+
+// either pass onclick="decorate" in html or
+displayELm.addEventListener("click", decorate);
+
+// can also be written as
+
+displayELm.addEventListener("click", () => {
+  displayELm.style.color = "red";
+  displayELm.style.fontSize = "3rem";
+  displayELm.style.backgroundColor = "black";
+});
