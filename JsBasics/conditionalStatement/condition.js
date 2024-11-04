@@ -60,7 +60,14 @@ switch (pet) {
   default:
     console.log("no sound available sorry");
 }
+
 /////////////////////logical operators///////////
 // (!) - converts truthy to false and vice.
 // && - and
 // || -or
+//  tenary:
+//  condition1 ? // runs when condition is :
+//  //else  runthis code:
+
+const agee = 90;
+agee < 50 ? console.log("welcome") : console.log("go home");

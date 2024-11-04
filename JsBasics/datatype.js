@@ -6,6 +6,14 @@ Boolean
 null
 undefined  */
 
+/* refrential data type 
+object {}
+arrays[]
+functions ()=>{
+    
+}
+*/
+
 ////////Data manipulation///////
 
 // 1.number manipulation
