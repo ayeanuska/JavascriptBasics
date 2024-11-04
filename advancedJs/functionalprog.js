@@ -55,11 +55,23 @@ console.log(val); */
 
 // - must have base case to stop recursion and a recursive case
 
-const factorial = (n) => {
-  if (n < 1) return 1;
-  return n * factorial(n - 1);
+// const factorial = (n) => {
+//   if (n < 1) return 1;
+//   return n * factorial(n - 1);
+// };
+
+// console.log(factorial(5));
+
+const money = [234, 45, 456, 23];
+const total = (moneyArg) => {
+  //base case to end the loop
+  if (!moneyArg.length) {
+    return 0;
+  }
+  // call the function itself
+  return moneyArg.pop() + total(money);
 };
 
-console.log(factorial(5));
-
 // HOMEWORK
+// WHAT IS MEMOIZATION ?
+// WHAT IS CURRYING ?
