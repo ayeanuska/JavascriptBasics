@@ -26,13 +26,43 @@ find node
 
 // console.log(str);
 
-// ..... ... ... make modification.. //
-//change name
-const nameElm = document.querySelector("display");
-const val = nameElm.innerText;
+// // ..... ... ... make modification.. //
+// //change name
+// const nameElm = document.querySelector("display");
+// const val = nameElm.innerText;
 
-nameElm.innerText = "Anuska";
+// nameElm.innerText = "Anuska";
+// console.log(val);
+
+// //to add
+// document.write(" Just adding through java script");
+
+//////////////////-----attribute-------//////////////////
+// const elm = document.getElementsByTagName ("a") [0];
+
+// const val =elm.getAttribute("href");
+// console.log(val);
+
+// //elm.setAttribute("class", "test-a-class");
+
+// elm.setAttribute("href", "https://google.om");
+
+/////////////////----Style-------/////////////////
+// elm.style.color ="red";
+// elm.style.fontSize ="3rem";
+// elm.style.textDecoration ="none";
+// elm.style.backgroundColor ="black";
+
+const messageElm = document.querySelector(".message");
+// console.log(messageElm);
+
+console.log(messageElm.classList); // see al the class list
+messageElm.classList.add("danger");
+messageElm.classList.remove("server");
+
+console.log(messageElm.classList);
+
+messageElm.classList.toggle("emptyone"); // toggle- if  empty adds if present removes.
+
+const val = messageElm.classList.contains("danger");
 console.log(val);
-
-//to add
-document.write(" Just adding through java script");
