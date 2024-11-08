@@ -45,3 +45,6 @@ const fruits = ["apple", "banana", "papaya", "orange"];
 // for eg [ 30,55,9] sorted acc to first num
 
 console.log(fruits.reverse());
+
+// array is stores in on dimension. close to each other
+// dynamic array vs static array
