@@ -25,20 +25,42 @@
 
 //Js specific array loops
 
-// for / of for (x of cars )  for array
+// // for / of for (x of cars )  for array
+// const fruits = ["apple", "banana", "orange", " mango"];
+// console.log(fruits);
+
+// const upperFruits = [];
+
+// 1. for (let item of fruits) {
+//   // upperFruits.push(item.toUpperCase());
+//   upperFruits.push(item.toUpperCase() + "-sku");
+// }
+// console.log(upperFruits);
+
+// // to concat in one go
+
+// for (i = 0; i > fruits.length; i++) {
+//   console.log(i, fruits(i));
+// }
+/////////////// 2. foreach loop//////////
+
 const fruits = ["apple", "banana", "orange", " mango"];
-console.log(fruits);
+fruits.forEach((fruit, index) => {
+  console.log(index, fruit);
+});
 
-const upperFruits = [];
+// - used if there is no need to add data but only loop throught the arry
 
-for (let item of fruits) {
-  // upperFruits.push(item.toUpperCase());
-  upperFruits.push(item.toUpperCase() + "-sku");
-}
-console.log(upperFruits);
+//3. map---- allow you to create a sub array withput mutating the original one
 
-// to concat in one go
+const newData = fruits.map((item, i) => {
+  // console.log(item, i);
+  // return "sku-" + item.toUpperCase();
 
-for (i = 0; i > fruits.length; i++) {
-  console.log(i, fruits(i));
-}
+  console.log(newData);
+  // result:[ 'sku-APPLE', 'sku-BANANA', 'sku-ORANGE', 'sku- MANGO' ]
+
+  if (item.includes("n")) {
+    return item;
+  }
+});
