@@ -38,3 +38,7 @@ for (let item of fruits) {
 console.log(upperFruits);
 
 // to concat in one go
+
+for (i = 0; i > fruits.length; i++) {
+  console.log(i, fruits(i));
+}
