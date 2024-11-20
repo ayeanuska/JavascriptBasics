@@ -42,25 +42,50 @@
 // for (i = 0; i > fruits.length; i++) {
 //   console.log(i, fruits(i));
 // }
-/////////////// 2. foreach loop//////////
+/////////////// 2. foreach loop//////////--
+// allow you to loop through each item and give each item and index.
 
-const fruits = ["apple", "banana", "orange", " mango"];
-fruits.forEach((fruit, index) => {
-  console.log(index, fruit);
-});
+// const fruits = ["apple", "banana", "orange", " mango"];j
+// fruits.forEach((fruit, index) => {
+//   console.log(index, fruit);
+// });
 
-// - used if there is no need to add data but only loop throught the arry
+// // - used if there is no need to add data but only loop throught the arry
 
-//3. map---- allow you to create a sub array withput mutating the original one
+// //3. map---- allow you to create a sub array withput mutating the original array
+// // creates a memory location for new array and waits for items to get passed init ?
+//new array is of sam esize of original array( always occu[y memory block])
 
-const newData = fruits.map((item, i) => {
-  // console.log(item, i);
-  // return "sku-" + item.toUpperCase();
+// const newData = fruits.map((item, i) => {
+//   // console.log(item, i);
+//   // return "sku-" + item.toUpperCase();
 
-  console.log(newData);
-  // result:[ 'sku-APPLE', 'sku-BANANA', 'sku-ORANGE', 'sku- MANGO' ]
+//   // console.log(newData);
+//   // result:[ 'sku-APPLE', 'sku-BANANA', 'sku-ORANGE', 'sku- MANGO' ]
 
-  if (item.includes("n")) {
-    return item;
-  }
-});
+//   if (item.includes("n")) {
+//     return item;
+//   }
+// });
+
+// 4. filter
+// // new array size depends on weather we want to send the item creating req memory block
+// const newData = fruits.filter((item, i) => {
+//   console.log(item, i);
+//   if (item.includes("n")) {
+//     return true;
+//   }
+// });
+// console.log(newData);
+// // [ 'banana', 'orange', ' mango' ]- result
+
+// *  const newData = fruits.filter((item, i) => item.includes("n")):
+
+// reduce
+const money = [10, 345, 4395, 5443, 644, 6433];
+const total = money.reduce((subTtl, item) => {
+  return subTtl + item;
+}, 0);
+console.log(total);
+// 0 is the initial value //
+//subttl is acting as accumulator.
