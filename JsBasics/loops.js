@@ -89,3 +89,19 @@ const total = money.reduce((subTtl, item) => {
 console.log(total);
 // 0 is the initial value //
 //subttl is acting as accumulator.
+
+// 4. every
+
+const result = fruits.every((item) => {
+  console.log(item);
+  return item.includes("a");
+  // return; // test condition
+});
+
+console.log(result);
+
+//true if evry single array pass the condition gives true other wise false
+
+const resultB = money.every((num) => {
+  return num >= 10;
+});
