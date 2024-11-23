@@ -38,5 +38,16 @@ for (let i = 0; i < arr.length; i++) {
   console.log(arr[i]);
 }
 console.log(uniqueAr);
+
 // Challenge #2 create unique array 50
 // numbers range between 1 and 100 programmatically
+
+const uniqueArr = [];
+for (i = 0; uniqueArr.length <= 50; i++) {
+  const arr2 = Math.floor(Math.random() * 100 + 1);
+  if (!uniqueArr.includes(arr2));
+  {
+    uniqueArr.push(arr2);
+  }
+}
+console.log(uniqueArr);
