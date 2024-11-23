@@ -81,27 +81,46 @@
 
 // *  const newData = fruits.filter((item, i) => item.includes("n")):
 
-// reduce
+// // reduce
+// const money = [10, 345, 4395, 5443, 644, 6433];
+// const total = money.reduce((subTtl, item) => {
+//   return subTtl + item;
+// }, 0);
+// console.log(total);
+// // 0 is the initial value //
+// //subttl is acting as accumulator.
+
+// // 4. every
+
+// const result = fruits.every((item) => {
+//   console.log(item);
+//   return item.includes("a");
+//   // return; // test condition
+// });
+
+// console.log(result);
+
+// //true if evry single array pass the condition gives true other wise false
+
+// const resultB = money.every((num) => {
+//   return num >= 10;
+// });
+// passed all array so result is true in console
+
 const money = [10, 345, 4395, 5443, 644, 6433];
-const total = money.reduce((subTtl, item) => {
-  return subTtl + item;
-}, 0);
-console.log(total);
-// 0 is the initial value //
-//subttl is acting as accumulator.
 
-// 4. every
+// .includes()=
+// finds if the item exits in the array. also considers data type
 
-const result = fruits.every((item) => {
-  console.log(item);
-  return item.includes("a");
-  // return; // test condition
+// .find
+
+const result = money.find((item) => {
+  return item === 345;
 });
-
 console.log(result);
 
-//true if evry single array pass the condition gives true other wise false
+// returns the value if its in the array.
+// gives first found value
+//if not gives undefined
 
-const resultB = money.every((num) => {
-  return num >= 10;
-});
+const resultalt = money.find((item) => item === 345); // one line  code
