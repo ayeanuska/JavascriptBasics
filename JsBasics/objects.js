@@ -54,17 +54,39 @@ const person = {
 
 // to delete data
 // (person.pets = null), // delete the data but still hold memory
-  ///can use undefined
+///can use undefined
 
-  // delete person.phone // not best way but dleetes both properties and data
+// delete person.phone // not best way but dleetes both properties and data
 
-  // delete for array
+// delete for array
 //   person.skills[2].pop();
 
 // delete person.parents.f
 
-
 //destructuring  es6 obj
 
-const { name, phone,age , parents} = person; 
-console.log(name, age parents:{f}); //anuska and undefined 
+// const { name, phone,age= N/A, parents:{f}} = person;
+// console.log(name, age,  parents); //anuska and undefined
+
+// defaukt values
+// age= N/A is giving empty / data instead of showing undefined
+
+//es6 rest operator -- ...rest -- bundlesup propwrties
+const { name, phone, parents, ...restProperties } = person;
+console.log(restProperties); // gives all the remaining peoperties of the obj
+
+//es6 spread
+
+const career = {
+  tittle: "software engineer",
+  slary: "100k",
+};
+
+const combo = { ...career, ...person };//copying all propertirs
+console.log(combo); //
+
+
+//difference betwn rest and spread 
+
+rest: const ... = ( ... is before equals to )
+spread: const = ...career( .. is after equals to)
