@@ -17,8 +17,8 @@ const person = {
   ],
 
   parents: {
-    f: amrit,
-    m: karuna,
+    f: "amrit",
+    m: "karuna",
   },
 
   bio: () => {
@@ -30,9 +30,13 @@ console.log(person);
 
 // accesing data
 
-// console.log(person.name); //by .
-// console.log(person["parents"]);// by index
-// console.log(person.skills[3]) // BY . AND INDEX FOR NESTED ONES SO GOT JS
 
-console.log(person.skills[4][2]); // double nested- double index- got flexbox
-console.log(person.parents.f);
+
+
+const data = person.data, //by .
+const data =person["parents"],// by index
+const data = person.skills[3], //BY . AND INDEX FOR NESTED ONES SO GOT JS
+const data = person.skills[4][2],//double nested- double index- got flexbox
+const data = person.parents.f;
+
+console.log(data);
