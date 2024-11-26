@@ -1,6 +1,6 @@
 // for , while , do while are commonly used loops by most of the programming languages.
 
-// 1. for loop and 2. hile loop always chwcks the condition before any execution
+// 1. for loop and 2. while loop always chwcks the condition before any execution
 //do while runs the code once and then checks for conditiins
 
 // breakout loop
@@ -107,20 +107,27 @@
 // });
 // passed all array so result is true in console
 
-const money = [10, 345, 4395, 5443, 644, 6433];
+// const money = [10, 345, 4395, 5443, 644, 6433];
 
-// .includes()=
-// finds if the item exits in the array. also considers data type
+// // .includes()=
+// // finds if the item exits in the array. also considers data type
 
-// .find
+// // .find
 
-const result = money.find((item) => {
-  return item === 345;
-});
-console.log(result);
+// const result = money.find((item) => {
+//   return item === 345;
+// });
+// console.log(result);
 
-// returns the value if its in the array.
-// gives first found value
-//if not gives undefined
+// // returns the value if its in the array.
+// // gives first found value
+// //if not gives undefined
 
-const resultalt = money.find((item) => item === 345); // one line  code
+// const resultalt = money.find((item) => item === 345); // one line  code
+// console.log(resultalt);
+
+// newarray
+const loveArr = new Array(10).fill("L");
+console.log(loveArr);
+
+

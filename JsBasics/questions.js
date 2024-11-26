@@ -3,7 +3,7 @@
 
 function createCombo(str){
 let result =[];
- for ( Let i = 0; i< str.length ; i++){
+ for ( Let i = 0; i <str.length; i++){
     // console.log("from I", str[i]);
 
     let combolist= "";
@@ -15,6 +15,7 @@ result.push(combolist);
 }
 return result;
 }
+
 const combo = createCombo("dog");
 
 
