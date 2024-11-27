@@ -132,4 +132,4 @@ const person = {
 const p1 = JSON.stringify(person); // converting into json
 console.log(p1);
 
-const p2 = JSON.parse(JSON.stringify(person));
+const p2 = JSON.parse(JSON.stringify(person)); // converting back to js
