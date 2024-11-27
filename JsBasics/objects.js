@@ -124,12 +124,33 @@ const person = {
 // const p1 =object.assign({}, person)
 
 // shallow copy only copies first level data
-
 // const p1= {...person}; //spread
 
 // restful api
 
-const p1 = JSON.stringify(person); // converting into json
-console.log(p1);
+// const p1 = JSON.stringify(person); // converting into json
+// console.log(p1);
 
-const p2 = JSON.parse(JSON.stringify(person)); // converting back to js
+// const p2 = JSON.parse(JSON.stringify(person)); // converting back to js
+
+// loops for obj
+
+// for (let key in person) {
+//   console.log(key);
+
+//   console.log(person[key]);
+// }
+
+//converting obj into array
+
+const personArg = Object.entries(person);
+// .entries convets all the properties of the objects into array
+//only the first level array.
+//both name and anuska is in array
+
+const personarr = Object.keys(person);
+// .keys converts only the properties of the object into array
+// only name is converted into array
+
+const personar2 = Object.values(person);
+//converts only values i.e anuska into array
