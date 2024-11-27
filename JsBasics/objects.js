@@ -118,5 +118,18 @@ const person = {
     return "I love creating art";
   },
 };
+// const p1 = person;
 
-const p1 = person;
+// old way
+// const p1 =object.assign({}, person)
+
+// shallow copy only copies first level data
+
+// const p1= {...person}; //spread
+
+// restful api
+
+const p1 = JSON.stringify(person); // converting into json
+console.log(p1);
+
+const p2 = JSON.parse(JSON.stringify(person));
