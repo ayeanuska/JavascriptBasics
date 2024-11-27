@@ -1,30 +1,30 @@
 // js Data manipulation
 
 // obj:
-const person = {
-  name: "anuska",
-  phone: 22022930,
-  ismarried: true,
-  gender: undefined,
-  pets: null,
-  skills: [
-    "HTML",
-    "CSS",
-    "BOOTSTRAP",
-    "JAVASCRIPT",
-    ["DOM", "GRID SYSTEM", "FLEXBOX"],
-    "REACT",
-  ],
+// const person = {
+//   name: "anuska",
+//   phone: 22022930,
+//   ismarried: true,
+//   gender: undefined,
+//   pets: null,
+//   skills: [
+//     "HTML",
+//     "CSS",
+//     "BOOTSTRAP",
+//     "JAVASCRIPT",
+//     ["DOM", "GRID SYSTEM", "FLEXBOX"],
+//     "REACT",
+//   ],
 
-  parents: {
-    f: "amrit",
-    m: "karuna",
-  },
+//   parents: {
+//     f: "amrit",
+//     m: "karuna",
+//   },
 
-  bio: () => {
-    return "I love creating art";
-  },
-};
+//   bio: () => {
+//     return "I love creating art";
+//   },
+// };
 
 // console.log(person);
 
@@ -72,21 +72,51 @@ const person = {
 // age= N/A is giving empty / data instead of showing undefined
 
 //es6 rest operator -- ...rest -- bundlesup propwrties
-const { name, phone, parents, ...restProperties } = person;
-console.log(restProperties); // gives all the remaining peoperties of the obj
+// const { name, phone, parents, ...restProperties } = person;
+// console.log(restProperties); // gives all the remaining peoperties of the obj
 
-//es6 spread
+// //es6 spread
 
-const career = {
-  tittle: "software engineer",
-  slary: "100k",
+// const career = {
+//   tittle: "software engineer",
+//   slary: "100k",
+// };
+
+// const combo = { ...career, ...person }; //copying all propertirs
+// console.log(combo); //
+
+//difference betwn rest and spread
+
+// rest: const ... = ( ... is before equals to )
+// copying the properties and dding to the same obj
+// spread: const = ...career( .. is after equals to )
+// combining ht epropertiesinto new obj
+
+//copying data : shallow vs deep copy
+
+const person = {
+  name: "anuska",
+  phone: 22022930,
+  ismarried: true,
+  gender: undefined,
+  pets: null,
+  skills: [
+    "HTML",
+    "CSS",
+    "BOOTSTRAP",
+    "JAVASCRIPT",
+    ["DOM", "GRID SYSTEM", "FLEXBOX"],
+    "REACT",
+  ],
+
+  parents: {
+    f: "amrit",
+    m: "karuna",
+  },
+
+  bio: () => {
+    return "I love creating art";
+  },
 };
 
-const combo = { ...career, ...person };//copying all propertirs
-console.log(combo); //
-
-
-//difference betwn rest and spread 
-
-rest: const ... = ( ... is before equals to )
-spread: const = ...career( .. is after equals to)
+const p1 = person;
