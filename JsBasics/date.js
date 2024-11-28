@@ -22,6 +22,7 @@ const today = new Date("2020-8-12");
 const data = today.getDay();
 console.log(data); // will give which day was it on that date
 
-const date = today.toLocaleDateString(); //27/11/2024
-const date = today.toLocaleTimeString; // 00:00:00
-const date = today.toISOString;
+// today.setDate(today.getDate() + 10); // addding 10 days to todays date
+const today = new Date("2022-11-12");
+
+console.log(today);
