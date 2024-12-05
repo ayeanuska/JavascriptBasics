@@ -124,7 +124,7 @@ const person = {
 // const p1 =object.assign({}, person)
 
 // shallow copy only copies first level data
-// const p1= {...person}; //spread
+// const p1= {...person}; //spread // deep copy
 
 // restful api
 
