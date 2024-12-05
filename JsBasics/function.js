@@ -8,7 +8,8 @@ const { func } = require("prop-types");
 // call function
 // invoke function
 
-function sayHi(name, app) {
+function sayHi(name, app, level = n / a) {
+  // level = .. is a default value .
   const str =
     " hello world this is " +
     name +
@@ -20,3 +21,12 @@ function sayHi(name, app) {
 
 sayHi("anu , vscode"); // calling function and invoke
 sayHi("aye"); // dynaic using concat "+.+"
+
+// ALTERANATE  template literals
+
+function sayHi(name, level) {
+  const str = `${name} lets use template literals `;
+  console.log(str);
+}
+
+sayHi("anuska ");
