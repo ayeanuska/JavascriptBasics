@@ -45,15 +45,24 @@ const userList = [
 
   { name: "sam", location: "gordon", intrests: "music and guitar" },
 
-  { name: "ram", location: "gor", intrests: "mus guitar" },
+  { name: "ram", location: "rockdale" },
 ];
 
-console.log(userList);
+// console.log(userList);
 
-const personBio = ({ name, location, intrests }) => {
+//since third person hasnt got all data using rest/\,
+
+const career=()=>(){
+
+    return  `and she loves ${intrests}`,
+   
+}
+
+
+const personBio = ({ name, location, ...rest }) => {
   //   const { name, location, intrests } = person;
   //   const str = ` ${person.name} is from ${person.location} and she loves ${person.intrests} `;
-  const str = ` ${name} is from ${location} and she loves ${intrests} `;
+  const str = ` ${name} is from ${location}.` 
   return str;
 };
 
