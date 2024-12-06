@@ -62,8 +62,12 @@ const career=()=>(){
 const personBio = ({ name, location, ...rest }) => {
   //   const { name, location, intrests } = person;
   //   const str = ` ${person.name} is from ${person.location} and she loves ${person.intrests} `;
-  const str = ` ${name} is from ${location}.` 
+ let str = ` ${name} is from ${location}.` 
   return str;
+
+  if (rest.career){
+str+= career(rest)
+  }
 };
 
 // const date = personBio();
