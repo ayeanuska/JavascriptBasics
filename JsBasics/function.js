@@ -76,3 +76,11 @@ userList.foreEach((item, i) => {
   const data = personBio(item);
   console.log(data);
 });
+
+//SPread syntax
+
+// expands array into its elements
+// You can use spread syntax to make a shallow copy of an array. Each array element retains its identity without getting copied.
+
+// rest syntax - collects multiple elements and condenses in a singlr element
+// The rest syntax is used to "collect" remaining items into an array or object. It’s like grabbing the leftovers.
