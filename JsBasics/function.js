@@ -53,20 +53,19 @@ const userList = [
 //since third person hasnt got all data using rest/\,
 
 const career = ({ career, intrests }) => {
- 
-  return `and she loves ${intrests}`;
+  return `and she is a ${career} loves ${intrests}`;
 };
 
-const personBio = ({ name, location, ...rest }) => 
+const personBio = ({ name, location, ...rest }) => {
   console.log(rest);
   //   const { name, location, intrests } = person;
   //   const str = ` ${person.name} is from ${person.location} and she loves ${person.intrests} `;
   let str = ` ${name} is from ${location}.`;
-  return str;
 
   if (rest.career) {
     str += career(rest);
   }
+  return str;
 };
 
 // const date = personBio();
